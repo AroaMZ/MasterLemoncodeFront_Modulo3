@@ -18,5 +18,10 @@ module.exports = merge(common,{
     new DotEnv({
         path: "./dev.env",
     })
-  ]
+  ],
+  devServer: {
+    devMiddleware: {
+      stats: "errors-only",
+    },
+  },
 });
